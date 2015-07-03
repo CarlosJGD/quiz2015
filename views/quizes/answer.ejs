@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz 2015</title>
+</head>
+<body>
+	<h2>Quiz: El juego de las preguntas</h2>
+	<p><%= respuesta %></p>
+	<!-- Muestra el enlace si es incorrecta la respuesta usando EJS --> 
+	<%	if (respuesta === 'Incorrecto') { %>
+			<a href="/quizes/question">Intentelo otra vez ...</a>
+	<%	}	 
+		else { %>
+			<a href="/">Comienza de Nuevo</a>
+	<%	} %>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz 2015</title>
+</head>
+<body>
+	<h2>Quiz: El juego de las preguntas</h2>
+
+	<form method='get' action='/quizes/answer'>
+		<p>Pregunta: <%= pregunta %></p>
+		<!-- Probar required y placeholder -->
+		<input type="text" name="respuesta" value="" placeholder="Responda aqui..." required/>
+		<input type="submit" value="Enviar" />
+	</form>
+</body>
+</html>

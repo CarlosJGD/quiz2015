@@ -1,9 +1,12 @@
+
+// Fichero que contine las RUTAS
+
 var express = require('express');
 var router = express.Router();
 
 var quizController = require('../controllers/quiz_controller');
 
-/* GET home page. */
+/* GET para la página de inicio. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz2015' });
 });
@@ -13,5 +16,7 @@ router.get('/', function(req, res) {
 */
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
+
+//router.get('/author', quizController.author);
 
 module.exports = router;
